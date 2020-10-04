@@ -1,0 +1,316 @@
+.hauteur300{min-height: 300px;}
+
+.hauteur{min-height: 200px;}
+
+.headerbg{background: url(../img/header-cv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+   
+.headerbg{background: url(../img/Fondcv_version_mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+}
+.section2{min-height: 600px;}
+
+.transition{height: 100px;}
+
+.section3{min-height: 500px}
+
+.section4{min-height: 300px;}
+
+.textpart1{font-family: Raleway;
+font-size: 1.0em;
+font-weight: 300;
+text-align: justify;
+padding: 30px 40px 15px 15px;}
+
+.contact{font-family: Raleway;
+font-size: 1.5em;
+font-weight: bold;
+padding-left: 35px;
+padding-top: 20px;}
+
+.txtformation{font-family: Raleway;
+font-size: 0.9em;
+font-weight: 400;
+padding-right: 30px;}
+
+.titreformation{font-family: Raleway;
+font-size: 1.0em;
+font-weight: 800;}
+
+.margegauche{
+padding: 0px 40px 30px 20px;}
+
+
+.dateformation{font-family: Raleway;
+font-weight:600;}
+
+.datepro{font-family: Raleway;
+font-weight:700;}
+
+.metier{font-family: Raleway;
+font-size: 1.4em;
+font-weight: 800;
+text-align: justify;
+font-variant: small-caps;
+line-height: 0.8;}
+
+.lieu{font-family: Raleway;
+font-size: 1.0em;
+font-weight: 300;
+text-align: justify;
+text-transform: uppercase;}
+
+.responsabilite{font-family: Raleway;
+font-weight:500;}
+
+.icon{padding: 20px 20px 20px 20px;}
+
+.competences{ font-family: Raleway, sans-serif;
+font-size: 1.4;
+font-weight: 700;}
+
+.hobbies{padding-top: 30px;
+text-align: center;}
+
+.softskills{font-family: Raleway;
+font-size: 1.4em;
+font-weight: 500;
+padding-top: 30px;}
+
+.margskills{ padding-bottom : 30px; }
+
+.fond{background-color: #DCDAD9;}
+
+.centrer{text-align: center;}
+
+.footer{background-color: #283582;
+color: white;}
+
+.autrinfo{padding-top: 40px;}
+
+
+hr{border-width: 1px;
+background-color: black;}
+
+h1{font-family: Raleway;
+	font-size: 3.0em;
+	padding: 20px 0px 5px 40px;
+	font-weight: 500;}
+
+h2{font-family: Courgette;
+font-size: 2.7em;
+padding: 0px 0px 5px 40px;}
+
+ul{list-style-type: none;}
+
+h3{font-family: Courgette;
+font-size: 2.0em;
+padding-top: 30px;
+padding-bottom: 20px;
+color: #283582;}
+
+
+
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin-left:-590px;
+  margin-top: 80px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #283582;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+}
+
+/* Container around content */
+.chrono {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 80%;
+}
+
+/* The circles on the timeline */
+.chrono::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 3px solid #283582;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 5px 15px;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+
+  .timeline{margin-left: 0;}
+
+/* Full-width containers */
+  .chrono {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 15px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .chrono::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* fin première timeline) */
+
+
+/* The actual timeline (the vertical ruler) */
+.temps {
+  position: relative;
+  max-width: 600px;
+  margin-left:-270px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.temps::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #283582;
+  top: 0;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -5px;
+}
+
+/* Container around content */
+.chrono {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 70%;
+}
+
+/* The circles on the timeline */
+.chrono::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 3px solid #283582;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 5px 15px;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .temps::after {
+    left: 31px;
+  }
+
+
+  .temps{margin-left: 0;}
+
+/* Full-width containers */
+  .chrono {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 15px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .chrono::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
