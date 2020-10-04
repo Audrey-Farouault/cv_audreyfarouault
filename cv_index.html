@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	 <link rel="stylesheet" href="css/cvstyle.css">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<title>Cv Audrey Farouault</title>
+
+	<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="js/AudreyFarouault_logo_fond bleu.js"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("D8F8C9694C4A5749B2A882D2E307C88D");
+	var lib=comp.getLibrary();
+	handleComplete({},comp);
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	exportRoot = new lib.AniamtionLogo_perso();
+	stage = new lib.Stage(canvas);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(true,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+</script>
+</head>
+<body onload="init();" style="margin:0px;">
+	
+<!-- DEBUT! -->
+	<div class="container-lg">
+
+<!-- Premiere section -->
+
+		<div class="row center hauteur headerbg text-white pb-5 pt-5 pl-3 pr-3">
+			
+			<div class="col-lg-2 col-sm text-center pt-3 pl-4">
+				<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:120px; height:120px">
+				<canvas id="canvas" width="120" height="120" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+				<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:120px; height:120px; position: absolute; left: 0px; top: 0px; display: block;">
+				</div>
+			</div>
+		</div>
+			<div class="col-lg-6 col-sm">
+				<h1>Stage Webdesigner</h1>
+				<h2>Audrey Farouault</h2></div>
+			<div class="col-lg-4 col-sm"><span class="contact">Contact :</span>
+				<ul>
+					<li>Etage 1, Bâtiment Les Comores,<br> Résidence La Baie des Anges,<br> 13600 La Ciotat</li>
+					<li>Téléphone : 06 59 16 78 76</li>
+					<li>Mail : audrey.farouault@gmail.com</li>
+					<li>instagram</li>
+				</ul></div>
+		</div>	
+<!-- fin premiere section -->
+		
+
+<!-- deuxième section -->
+
+		<div class="row section2 bg-light pt-4 pb-5 pl-3 pr-3">
+			<div class="col-lg-7 col-sm">
+				<div class="row hauteur300 ">
+						<div class="col-lg-12 col-sm mb-3">
+							<h3>&lt;Mon profile&gt;</h3>
+							<p class="textpart1">Je pratique le graphisme depuis 10 ans. Durant ses années, j'ai développé divers compétences essentielles au métier de graphiste : adaptation rapide à un nouvel environnement, esprit analytique, autonome, motivée, organisée et curieuse. Je suis capable de travailler en équipe et de les fédérer.<br>
+							Aujourd'hui, je souhaite évoluer vers le métier de webdesigner afin de rencontrer de nouveaux challenges et intégrer de nouvelles compétences.
+							</p>
+						</div>	
+							<div class="margegauche"><h3>&lt;Education&gt;</h3></div>
+							 <div class="timeline">
+  								<div class="chrono right">
+    							<div class="content">
+      								<span class="titreformation">Académy Numérique, Marseille<span><br>
+      								<span class="dateformation">Mai 2020 à aujourd'hui</span>
+     								<p class="txtformation">Formation en vu de passer une certification niveau 2 en Webdesign.</p>
+    							</div>
+  								</div>
+  								<div class="chrono right">
+							    <div class="content">
+							      <span class="titreformation">Examen <abbr title="Test of English for International Communication">T.O.E.I.C</abbr></span><br><span class="dateformation">Nov.2015</span>
+							      <p class="txtformation">Obtention du <abbr title="Test of English for International Communication">T.O.E.I.C</abbr> : 855 pts/995 pts.</p>
+							    </div>
+							  </div>
+							  <div class="chrono right">
+							    <div class="content">
+							      <span class="titreformation">Diplôme Master <abbr title="Ecole de Design Nantes Atlantique">E.D.N.A</abbr>, Nantes / Bangalore</span><br><span class="dateformation">Sept. 2009- Sept. 2014</span>
+							      <p class="txtformation">Cinquième année design graphique, Diplome Master. Transcultural Design Inde, projet et mémoire sur le vin en Inde. Srishti School of Art Design and Technology, Bangalore, Inde.
+							      </p>
+							    </div>
+							  </div>
+							  <div class="chrono right">
+							    <div class="content">
+							      <span class="titreformation">Lycée Jean XVIII,Les Herbiers</span><br><span class="dateformation">Juin 2009</span>
+							      <p class="txtformation">Obtention du baccalauréat littérature</p>
+							    </div>
+							  </div>
+							</div>
+						</div>
+				</div>
+
+			<div class="col-lg-5 col-sm">
+				<div>
+					<h3>&lt;Mon expérience&gt;</h3>
+				</div>
+				<div class="temps">
+  					<div class="chrono right">
+    				<div class="content">
+      					<span class="metier">graphique designer</span><br>
+						<span class="lieu">Freelance</span><br>
+						<span class="datepro">Janvier 2019 - Mai 2020</span><br>
+						<p class="txtformation">Gestion de projets de design graphique. Réalisation de divers projets en lien avec des associations : identité visuelle, flyers, conseil en image.</p>
+    				</div>
+  					</div>
+  					<div class="chrono right">
+					<div class="content">
+						<span class="metier">chargée de<br> communication & marketing</span><br>
+						<span class="lieu">Tenergie</span><br>
+						<span class="datepro">Mai 2017 - Septembre 2018</span><br>
+						<p class="txtformation">Gestion de la communication interne et externe de l’entreprise. Organisation des événements internes et externes de l’entreprise.</p>
+					</div>
+					</div>
+					<div class="chrono right">
+					<div class="content">
+						<span class="metier">graphique designer</span><br>
+						<span class="lieu">Freelance</span><br>
+						<span class="datepro">Octobre 2016 - Avril 2017</span><br>
+						<p class="txtformation">Gestion de la communication interne et externe de l’entreprise. Organisation des événements internes et externes de l’entreprise.</p>
+					</div>
+					</div>
+				    <div class="chrono right">
+					<div class="content">
+						<span class="metier">photographe</span><br>
+						<span class="lieu">Phœnix PHOTO Puy du Fou</span><br>
+						<span class="datepro">Mars 2016 - Septembre 2016</span><br>
+						<p class="txtformation">Animatrice et réalisatrice de séances photo auprès des visiteurs du Parc du Puy du Fou. Vendeuse et responsable boutique de la boutique photo.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- fin deuxième section -->
+
+	
+<!-- Troisieme section -->	
+
+
+		<div class="row section3 pt-5 pb-5 fond">
+			<div class="col-lg-6 col-sm pb-3">
+				<div>
+					<h3 class="centrer">&#123;Soft-skills&#125;</h3>
+				</div>
+			<div class="row">
+				<div class=" col-lg-6 col-sm">
+				<ul class="softskills">
+					<li class="margskills">Créativité</li>
+					<li class="margskills">Adaptation</li>
+					<li class="margskills">Communication</li>
+					<li class="margskills">Pédagogie</li>
+					<li class="margskills">Détermination</li>
+				</ul>
+				</div>
+
+				<div class=" col-lg-6 col-sm">
+					<ul class="softskills">
+					<li class="margskills">Curieuse</li>
+					<li class="margskills">Empathique</li>
+					<li class="margskills">Ouverte d'esprit</li>
+					<li class="margskills">Rigoureuse</li>
+					<li class="margskills">Esprit d'équipe</li>
+					</ul>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="col-lg-6 col-sm margegauche fond text-center">
+				<h3 class="pb-3">&#123;Techniques&#125;</h3>
+				<span class="competences">Graphisme</span>
+				<div>
+					<img class="icon" src="img/photoshop.png" alt="logo d'abobe photoshop">
+					<img class="icon" src="img/illustrator.png" alt="logo d'abobe illustrator">
+					<img class="icon" src="img/indesign.png" alt="logo d'abobe Indesign">
+					<img class="icon" src="img/experience.png" alt="logo d'abobe XD">
+				</div>
+				<div>
+					<img class="icon" src="img/after-effects.png" alt="logo d'abobe d'after effects">
+					<img class="icon" src="img/animate.png"alt="logo d'animate">
+				</div>
+				<span class="competences">Web</span>
+				<div>
+					<img class="icon" src="img/html5.png" alt="logo d'abobe photoshop">
+					<img class="icon" src="img/css-3.png" alt="logo d'abobe illustrator">
+					<img class="icon" src="img/wordpress.png" alt="logo d'abobe Indesign">
+					<img class="icon" src="img/bootstrap.png"alt="logo d'animate">
+				</div>
+
+
+			</div>
+		</div>	
+
+<!-- fin troisième section -->
+
+		
+<!-- Quatrième section -->
+
+		<div class="row center section4 bg-light pt-5 pb-4">
+			
+			<div class="col-lg-6 col-sm text-center">
+				<h3>&lt;Autres informations&gt;</h3>
+				<div>
+					<span class="competences autrinfo">Langues</span>
+					<p>Anglais : Niveau C1</p>
+					<span class="competences autrinfo">Permis</span>
+					<p>B et véhiculé</p>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-sm justify-content-center text-center">
+				<h3>&lt;Mes centres d'intérêts&gt;</h3>
+				<div class="hobbies">
+					<img class="icon" src="img/running.png" alt="pictogramme homme qui court">
+					<img class="icon" src="img/camera.png" alt="pictogramme d'un appareil photo">
+					<img class="icon" src="img/knitting.png" alt="pictogramme tricot">		
+					<img class="icon" src="img/yoga.png" alt="pictogramme yoga">
+					<img class="icon" src="img/cupcake.png" alt="pictograme d'un cupcake">
+				</div>
+			</div>
+		</div>	
+
+<!-- fin quatrième section -->
+
+<!-- Footer -->
+		<div class="row footer">
+			<div class=" col-lg col-sm mt-4 mb-3 text-center">
+			<p>Merci d'avoir pris le temps de regarder mon cv, retrouvez mon portfolio : en construction</p>
+			<p>Si vous l'imprimez, merci de ne pas le jeter sur la voie publique.</p>
+				
+			</div>
+			
+		</div>
+
+
+
+	</div>
+<!-- Fin! -->
+
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
